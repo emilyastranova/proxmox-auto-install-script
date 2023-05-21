@@ -97,6 +97,15 @@ else
         apt remove -y os-prober
     fi
 
+    # Ask if user wants to remove subscription notice
+    read -p "Would you like to remove the subscription notice? (y/n): " subscription_choice
+    if [ "$subscription_choice" == "y" ]; then
+        # Remove subscription notice
+        echo "Removing subscription notice..."
+        sed -Ezi.bak "s/(Ext.Msg.show\(\{\s+title: gettext\('No valid sub)/void\(\{ \/\/\1/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+        echo "Subscription notice removed."
+    fi
+
     # Final reboot
     read -p "Proxmox VE configuration is complete. Would you like to reboot now? (y/n): " reboot_choice
     if [ "$reboot_choice" == "y" ]; then
