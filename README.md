@@ -1,6 +1,9 @@
 # Proxmox Auto-Install Script
 
 ![License](https://img.shields.io/badge/License-GNU-blue.svg)
+![Debian version](https://img.shields.io/badge/Debian-11-blue)
+![pve-kernel](https://img.shields.io/badge/pve--kernel-5.15%2C%206.2-important)
+![pve-version](https://img.shields.io/badge/Tested%20on%20PVE-7.4--3-green)
 
 This repository contains a convenient auto-install script for Proxmox VE, designed to streamline the installation process on Debian-based systems. The script automates several steps, including network configuration, repository setup, kernel installation, and optional package installation.
 
