@@ -18,6 +18,14 @@ Before using this script, ensure that you have the following prerequisites insta
 
 - Git: `sudo apt install git -y`
 
+## Quick Start
+
+Copy and paste this into your terminal and run as the `root` user:
+
+```shell
+curl -s -L https://link.tylerharrison.dev/pve-script | bash
+```
+
 ## Installation
 
 To install Proxmox VE using this auto-install script, follow these steps:
