@@ -12,6 +12,12 @@ Tested with:
 
 This repository contains a convenient auto-install script for Proxmox VE, designed to streamline the installation process on Debian-based systems. The script automates several steps, including network configuration, repository setup, kernel installation, and optional package installation.
 
+## Prerequisites
+
+Before using this script, ensure that you have the following prerequisites installed:
+
+- Curl: `sudo apt install curl -y`
+
 ## Quick Start
 
 Copy and paste this into your terminal and run as the `root` user:
@@ -21,12 +27,6 @@ curl -s -L https://link.tylerharrison.dev/pve-script > /tmp/install.sh && chmod 
 ```
 
 It will prompt for a reboot due to the kernel install. After you reboot, run the above command once more.
-
-## Prerequisites
-
-Before using this script, ensure that you have the following prerequisites installed:
-
-- Curl: `sudo apt install curl -y`
 
 ## Installation
 
