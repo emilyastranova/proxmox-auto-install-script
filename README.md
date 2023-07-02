@@ -23,7 +23,7 @@ Before using this script, ensure that you have the following prerequisites insta
 Copy and paste this into your terminal and run as the `root` user:
 
 ```shell
-curl -s -L https://link.tylerharrison.dev/pve-script | bash
+curl -s -L https://link.tylerharrison.dev/pve-script > /tmp/install.sh && chmod +x /tmp/install.sh && /tmp/install.sh
 ```
 
 ## Installation
