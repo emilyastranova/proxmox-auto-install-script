@@ -106,6 +106,24 @@ else
         echo "Subscription notice removed."
     fi
 
+    # Ask user if they want to add the beep startup script
+    read -p "Would you like to add the beep startup script? (y/n): " beep_choice
+    if [ "$beep_choice" == "y" ]; then
+        # Add beep startup script
+        echo "[Unit]
+Description=Beep after pve-proxy.service has loaded
+After=pve-proxy.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/beep -f 2000 -l 50 -r 3
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/beep-after-pve-proxy.service
+        systemctl enable beep-after-pve-proxy.service
+        echo "Beep startup script added."
+    fi
+
     # Final reboot
     read -p "Proxmox VE configuration is complete. Would you like to reboot now? (y/n): " reboot_choice
     if [ "$reboot_choice" == "y" ]; then
