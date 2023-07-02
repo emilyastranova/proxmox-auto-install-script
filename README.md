@@ -26,6 +26,8 @@ Copy and paste this into your terminal and run as the `root` user:
 curl -s -L https://link.tylerharrison.dev/pve-script > /tmp/install.sh && chmod +x /tmp/install.sh && /tmp/install.sh
 ```
 
+It will prompt for a reboot due to the kernel install. After you reboot, run the above command once more.
+
 ## Installation
 
 To install Proxmox VE using this auto-install script, follow these steps:
