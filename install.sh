@@ -120,7 +120,8 @@ ExecStart=/usr/bin/beep -f 2000 -l 50 -r 3
 
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/beep-after-pve-proxy.service
-        systemctl enable beep-after-pve-proxy.service
+        systemctl daemon-reload
+        systemctl enable --now beep-after-pve-proxy.service
         echo "Beep startup script added."
     fi
 
