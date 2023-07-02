@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Allow for user input
-exec 1</dev/tty
-
 # Banner
 echo "=== Proxmox VE Installation Script ==="
 
