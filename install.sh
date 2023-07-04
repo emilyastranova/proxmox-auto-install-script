@@ -110,6 +110,7 @@ else
     read -p "Would you like to add the beep startup script? (y/n): " beep_choice
     if [ "$beep_choice" == "y" ]; then
         # Add beep startup script
+        apt install beep -y
         echo "[Unit]
 Description=Beep after pve-proxy.service has loaded
 After=pve-proxy.service
