@@ -40,10 +40,6 @@ iface $interface inet static
     # Generate hosts file
     echo "127.0.0.1 localhost
 $static_ip $(hostname)" > /etc/hosts
-    
-    # Restart networking service
-    echo "Restarting networking service..."
-    systemctl restart networking.service
 
     # Add Proxmox VE apt source
     echo "Adding Proxmox VE apt source..."
