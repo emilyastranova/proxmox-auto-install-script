@@ -23,7 +23,7 @@ Before using this script, ensure that you have the following prerequisites insta
 Copy and paste this into your terminal and run as the `root` user:
 
 ```shell
-curl -s -L https://link.tylerharrison.dev/pve-script > /tmp/install.sh && chmod +x /tmp/install.sh && /tmp/install.sh
+curl -s -L https://raw.githubusercontent.com/emilyastranova/proxmox-auto-install-script/refs/heads/main/install.sh > /tmp/install.sh && chmod +x /tmp/install.sh && /tmp/install.sh
 ```
 
 It will prompt for a reboot due to the kernel install. After you reboot, run the above command once more.
@@ -34,7 +34,7 @@ To install Proxmox VE using this auto-install script, follow these steps:
 
 1. Get the script from GitHub:
    ```shell
-   curl -s -L https://link.tylerharrison.dev/pve-script > /tmp/install.sh
+   curl -s -L https://raw.githubusercontent.com/emilyastranova/proxmox-auto-install-script/refs/heads/main/install.sh > /tmp/install.sh
    ```
 
 2. Make the `install.sh` script executable:
@@ -68,7 +68,7 @@ Contributions to this project are welcome. If you find any issues or have sugges
 
 ## Author
 
-This Proxmox Auto-Install Script is maintained by [Tyler Harrison](https://github.com/tyleraharrison).
+This Proxmox Auto-Install Script is maintained by [Emily Astranova](https://github.com/emilyastranova).
 
 ## Acknowledgments
 
